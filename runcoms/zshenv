@@ -10,6 +10,9 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
+# Configuration that should remain private
+[[ -s "${HOME}/.secrets" ]] && source "${HOME}/.secrets"
+
 # powerlevel
 export TERM="xterm-256color"
 POWERLEVEL9K_MODE='awesome-patched'
@@ -21,3 +24,11 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_unique"
 
 POWERLEVEL9K_STATUS_OK=false
+
+# Add N in case it's present
+export N_PREFIX=$HOME/.n
+[ -d $N_PREFIX ] && export PATH=$N_PREFIX/bin:$PATH
+
+# Edit with emacs
+export EDITOR="emacsclient"
+export ALTERNATE_EDITOR="emacs"
