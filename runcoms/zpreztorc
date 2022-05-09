@@ -36,12 +36,17 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'directory' \
   'spectrum' \
+  'gnu-utility' \
   'utility' \
   'git' \
   'completion' \
   'history-substring-search' \
   'prompt' \
-  'aliases'
+  'aliases' \
+  'gpg' \
+  'osx' \
+  'ruby' \
+  'fasd'
 
 #
 # Autosuggestions
