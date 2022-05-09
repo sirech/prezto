@@ -46,7 +46,8 @@ zstyle ':prezto:load' pmodule \
   'gpg' \
   'osx' \
   'ruby' \
-  'fasd'
+  'fasd' \
+  'rg'
 
 #
 # Autosuggestions
