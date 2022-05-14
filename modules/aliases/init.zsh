@@ -4,6 +4,7 @@ alias hs='history | grep'
 alias hsi='history | grep -i'
 
 # git
+alias git='noglob git'
 alias gs='git status'
 alias gu='git pull -v'
 alias ga='git add -v'
