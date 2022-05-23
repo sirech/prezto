@@ -1,7 +1,7 @@
 # history
-alias h='history'
-alias hs='history | grep'
-alias hsi='history | grep -i'
+alias h='history 1'
+alias hs='history 1 | grep'
+alias hsi='history 1 | grep -i'
 
 # git
 alias git='noglob git'
