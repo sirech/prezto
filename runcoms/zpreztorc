@@ -47,7 +47,8 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'ruby' \
   'fasd' \
-  'rg'
+  'rg' \
+  'android'
 
 #
 # Autosuggestions
