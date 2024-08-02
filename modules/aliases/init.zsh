@@ -21,6 +21,6 @@ alias -g G='| grep' # now you can do: ls foo G something
 alias -g F='| fzf'
 
 # exa
-if test $(which exa); then
-  alias l='exa -lah'
+if test $(which eza); then
+  alias l='eza -lah'
 fi
